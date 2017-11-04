@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D10F0791FAD68FD00097275 /* Eye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D10F0761FAD68FD00097275 /* Eye.jpg */; };
+		4D10F07A1FAD68FD00097275 /* I-LASH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D10F0771FAD68FD00097275 /* I-LASH.jpg */; };
+		4D10F07B1FAD68FD00097275 /* Logo W:O Slogan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D10F0781FAD68FD00097275 /* Logo W:O Slogan.png */; };
 		4D748C9A1F6D656D004082E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D748C991F6D656D004082E4 /* GoogleService-Info.plist */; };
 		763DCC820FC0E7F19904209D /* Pods_Uber_App_For_Rider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCEA4B72AA894868FDF695A /* Pods_Uber_App_For_Rider.framework */; };
 		FA0D4EE11DB8C91500763007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D4EE01DB8C91500763007 /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D10F0761FAD68FD00097275 /* Eye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eye.jpg; sourceTree = "<group>"; };
+		4D10F0771FAD68FD00097275 /* I-LASH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "I-LASH.jpg"; sourceTree = "<group>"; };
+		4D10F0781FAD68FD00097275 /* Logo W:O Slogan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo W:O Slogan.png"; sourceTree = "<group>"; };
 		4D748C991F6D656D004082E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5D73141C537781FE5579105F /* Pods-Uber App For Rider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber App For Rider.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber App For Rider/Pods-Uber App For Rider.release.xcconfig"; sourceTree = "<group>"; };
 		6CCEA4B72AA894868FDF695A /* Pods_Uber_App_For_Rider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_App_For_Rider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,9 @@
 				FA0D4EE91DB8C91500763007 /* LaunchScreen.storyboard */,
 				FA0D4EEC1DB8C91500763007 /* Info.plist */,
 				4D748C991F6D656D004082E4 /* GoogleService-Info.plist */,
+				4D10F0761FAD68FD00097275 /* Eye.jpg */,
+				4D10F0771FAD68FD00097275 /* I-LASH.jpg */,
+				4D10F0781FAD68FD00097275 /* Logo W:O Slogan.png */,
 			);
 			path = "Uber App For Rider";
 			sourceTree = "<group>";
@@ -201,10 +210,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D10F07B1FAD68FD00097275 /* Logo W:O Slogan.png in Resources */,
 				FA0D4EEB1DB8C91500763007 /* LaunchScreen.storyboard in Resources */,
 				4D748C9A1F6D656D004082E4 /* GoogleService-Info.plist in Resources */,
+				4D10F0791FAD68FD00097275 /* Eye.jpg in Resources */,
 				FA0D4EE81DB8C91500763007 /* Assets.xcassets in Resources */,
 				FA0D4EE61DB8C91500763007 /* Main.storyboard in Resources */,
+				4D10F07A1FAD68FD00097275 /* I-LASH.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

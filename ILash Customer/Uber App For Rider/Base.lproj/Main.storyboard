@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,14 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ky-WK-tWG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ky-WK-tWG">
                                 <rect key="frame" x="41" y="79" width="286" height="513"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JK9-BV-m6h">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JK9-BV-m6h">
                                         <rect key="frame" x="8" y="8" width="270" height="1670"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1670" id="8dv-py-Hoi"/>
+                                        </constraints>
                                         <mutableString key="text">PLOWING - GENERAL TERMS OF SERVICE FOR I-LASH, LLC
 
 	These General Terms of Service apply to any and all agreements I-LASH, LLC (“I-LASH”) may have with either a customer (“Customer”) of I-LASH and\or a service provider (“Provider”) snow plowing as an independent contractor for I-LASH.
@@ -61,21 +63,36 @@ These General Terms of Service are governed by the laws of the state of Illinois
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="JK9-BV-m6h" firstAttribute="leading" secondItem="5Ky-WK-tWG" secondAttribute="leadingMargin" id="FA8-SE-uyU"/>
+                                    <constraint firstItem="JK9-BV-m6h" firstAttribute="trailing" secondItem="5Ky-WK-tWG" secondAttribute="trailingMargin" id="NRQ-oS-wWz"/>
+                                    <constraint firstItem="JK9-BV-m6h" firstAttribute="centerX" secondItem="5Ky-WK-tWG" secondAttribute="centerX" id="Xim-6z-jZn"/>
+                                    <constraint firstAttribute="bottom" secondItem="JK9-BV-m6h" secondAttribute="bottom" constant="-1165" id="c6R-d3-The"/>
+                                    <constraint firstItem="JK9-BV-m6h" firstAttribute="top" secondItem="5Ky-WK-tWG" secondAttribute="topMargin" id="cxD-Yw-Yjk"/>
+                                </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwi-Ia-pK2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwi-Ia-pK2">
                                 <rect key="frame" x="26" y="617" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Contact Us"/>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Cw-thA">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Cw-thA">
                                 <rect key="frame" x="168" y="630" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="ean-C1-bVv" kind="show" id="LHg-MI-ZLt"/>
                                 </connections>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ky-WK-tWG" firstAttribute="top" secondItem="Ad6-nP-Yl1" secondAttribute="bottom" constant="59" id="6YM-ic-xAU"/>
+                            <constraint firstAttribute="bottom" secondItem="5Ky-WK-tWG" secondAttribute="bottom" constant="75" id="Pup-gq-702"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Ky-WK-tWG" secondAttribute="trailing" constant="32" id="bLP-kg-Jtq"/>
+                            <constraint firstItem="mWf-Cw-thA" firstAttribute="leading" secondItem="Mwi-Ia-pK2" secondAttribute="trailing" constant="65" id="gt8-UG-LKh"/>
+                            <constraint firstItem="mWf-Cw-thA" firstAttribute="bottom" secondItem="klU-XK-B0j" secondAttribute="top" id="nxP-Py-DRk"/>
+                            <constraint firstItem="Mwi-Ia-pK2" firstAttribute="top" secondItem="5Ky-WK-tWG" secondAttribute="bottom" constant="25" id="tPD-aM-b5t"/>
+                            <constraint firstItem="Mwi-Ia-pK2" firstAttribute="leading" secondItem="p1C-HS-7b7" secondAttribute="leadingMargin" constant="10" id="tWM-GE-YbS"/>
+                            <constraint firstItem="5Ky-WK-tWG" firstAttribute="leading" secondItem="p1C-HS-7b7" secondAttribute="leadingMargin" constant="25" id="zRv-tS-z90"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulq-W2-7QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
